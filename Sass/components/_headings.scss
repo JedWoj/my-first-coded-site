@@ -8,17 +8,35 @@
       font-size: 7rem;
       line-height: 1.4;
       font-weight: 600;
+      
     }
     &--2{
         color: $color-text-primary;
-        font-size: 4rem;
-        letter-spacing: 3px;
-        line-height: 1.6;
         text-transform: uppercase;
-        font-weight: 400;
+        letter-spacing: 6px;
+        font-size: 3.5rem;
+        font-weight: 600;
+        
+        
+
+        &::after{
+          content: "";
+          display: block;
+          margin: 1rem auto 0 auto;
+          height: 3px;
+          background-color: $color-gray;
+          width: 5rem;
+          
+          
+        }
     }
     &--3{
-
+      color: $color-text-primary;
+      font-size: 4rem;
+      letter-spacing: 3px;
+      line-height: 1.6;
+      text-transform: uppercase;
+      font-weight: 400;
     }
     &--4{
 

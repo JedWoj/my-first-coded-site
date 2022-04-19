@@ -1,0 +1,47 @@
+.about{
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12rem 0;
+    &__text{
+        width: 55%;
+        font-size: 1.5rem;
+        padding: 3rem 0;
+        text-align: center;
+    }
+    &__img-box{
+       width: 55%;
+       height: auto;
+       position: relative;
+    
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+        
+    }
+    &__shadow{
+        background-color: rgba($color-black, .4);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__play{
+        width: 4rem;
+        height: 4rem;
+        background-color: $color-white;
+        clip-path: polygon(0 100%, 100% 50%, 0 0);
+        cursor: pointer;
+
+
+        
+    }
+}
