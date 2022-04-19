@@ -1,19 +1,16 @@
-.who{
+.what{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: $color-gray-light;
     padding: $padding-primary 0;
     &__text{
         font-size: $font-size-primary;
-        margin-top: $margin-primary;
         width: 60%;
         text-align: center;
-        margin-bottom: $margin-primary;
+        margin-top: $margin-primary;
     }
     &__box{
-        width: 100%;
-        padding: 2rem 20rem;
+
     }
 }

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 12rem 0;
+    padding: $padding-primary 0;
     &__text{
         width: 55%;
         font-size: $font-size-primary;

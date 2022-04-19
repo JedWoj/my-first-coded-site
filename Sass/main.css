@@ -60,7 +60,6 @@ body {
   -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-column-gap: 2rem;
-  grid-row-gap: 3.5rem;
 }
 
 .gallery__img {
@@ -69,6 +68,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  position: relative;
 }
 
 .gallery__name {
@@ -79,7 +79,69 @@ body {
 
 .gallery__position {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
+}
+
+.gallery__overlay-box {
+  position: relative;
+}
+
+.gallery__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 38, 38, 0);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.gallery__overlay:hover {
+  background-color: #ff2626;
+}
+
+.gallery__overlay:hover .gallery__icon {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gallery__icon-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gallery__icon-box :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.gallery__icon {
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .header {
@@ -230,5 +292,29 @@ body {
 .who__box {
   width: 100%;
   padding: 2rem 20rem;
+}
+
+.what {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 12rem 0;
+}
+
+.what__text {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  margin-top: 5rem;
 }
 /*# sourceMappingURL=main.css.map */
