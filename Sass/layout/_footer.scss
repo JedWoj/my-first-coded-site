@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    background-color: $color-gray-dark;
+    &__text{
+        font-size: 1.2rem;
+    }
+}
