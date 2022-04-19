@@ -11,6 +11,30 @@
         margin-top: $margin-primary;
     }
     &__box{
+        padding: 0 20rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-gap: 3rem;
+    }
+    
+    &__cont{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__icon{
+        font-size: 9rem;
+        padding: 3rem;
+        margin: 2rem 0;
 
+        &--red{
+            color: $color-primary;
+        }
+    }
+    &__description{
+        font-size: 1.6rem;
+        text-align: center;
     }
 }

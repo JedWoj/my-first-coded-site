@@ -39,7 +39,14 @@
       font-weight: 400;
     }
     &--4{
-
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+    &--red{
+      color: $color-primary;
     }
 
 }
