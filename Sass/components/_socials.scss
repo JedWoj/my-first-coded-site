@@ -1,23 +1,31 @@
 .socials{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 3px;
     &__socialmedia{
         &--1{
-            background-color: blue;
+            background-color: $color-blue;
+            padding: 1rem 6rem;
         }
         &--2{
-
+            padding: 1rem 6rem;
+            background-color: $color-blue-light;
         }
         &--3{
-
+            padding: 1rem 6rem;
+           background-color:$color-pink;
         }
         &--4{
-
+            padding: 1rem 6rem;
+            background-color: $color-blue-dark;
         }
         &--5{
-
+            padding: 1rem 6rem;
+            background-color: $color-orange;
         }
     }
     &__icon{
-        color: red;
+        color: $color-white;
         font-size: 2rem;
     }
 }
