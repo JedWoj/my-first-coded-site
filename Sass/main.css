@@ -282,6 +282,116 @@ body {
   font-size: 2rem;
 }
 
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.slider__img-box {
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__img-box:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.slider__img {
+  width: 40vw;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30vh;
+}
+
+.slider__shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 38, 38, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider__shadow--active {
+  bottom: 0;
+  top: 85%;
+  left: 0;
+  right: 0;
+}
+
+.slider__text {
+  color: #fff;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.slider__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4rem 0 10rem 0;
+}
+
+.slider__dot {
+  font-size: 12rem;
+  line-height: 0.5;
+  -webkit-transform: translateY(-4rem);
+          transform: translateY(-4rem);
+  cursor: pointer;
+}
+
+.slider__dot--active {
+  font-size: 16rem;
+  -webkit-transform: translateY(-6.3rem);
+          transform: translateY(-6.3rem);
+  color: #ff2626;
+}
+
 .header {
   height: 100vh;
   background-image: url(../img/workplace.jpg);
@@ -495,6 +605,30 @@ body {
 .what__description {
   font-size: 1.6rem;
   text-align: center;
+}
+
+.work {
+  text-align: center;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.work__text {
+  font-size: 2rem;
+  width: 60%;
+  margin: 5rem 0;
 }
 
 .client {

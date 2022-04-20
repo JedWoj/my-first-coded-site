@@ -1,0 +1,15 @@
+.work{
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__text{
+        font-size: $font-size-primary;
+        width: 60%;
+        margin: 5rem 0;
+        
+    }
+}
