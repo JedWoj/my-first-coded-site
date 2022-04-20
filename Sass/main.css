@@ -223,6 +223,15 @@ body {
           transform: translateY(1px);
 }
 
+.socials__socialmedia--1 {
+  background-color: blue;
+}
+
+.socials__icon {
+  color: red;
+  font-size: 2rem;
+}
+
 .header {
   height: 100vh;
   background-image: url(../img/workplace.jpg);
