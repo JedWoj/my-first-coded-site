@@ -13,6 +13,12 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #211d1e;
@@ -26,6 +32,18 @@ body {
   font-size: 7rem;
   line-height: 1.4;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .heading--1 {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 50em) {
+  .heading--1 {
+    font-size: 4rem;
+  }
 }
 
 .heading--2 {
@@ -52,6 +70,12 @@ body {
   line-height: 1.6;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .heading--3 {
+    font-size: 3rem;
+  }
 }
 
 .heading--4 {
@@ -87,8 +111,8 @@ body {
 .gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-column-gap: 2rem;
 }
 
@@ -252,9 +276,33 @@ body {
   grid-row-gap: 3px;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .socials {
+    margin-top: 4rem;
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+  }
+}
+
 .socials__socialmedia--1 {
   background-color: #00a3f5;
   padding: 1rem 6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .socials__socialmedia--1 {
+    padding: 1rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .socials__socialmedia--2 {
@@ -262,9 +310,39 @@ body {
   background-color: #61caff;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .socials__socialmedia--2 {
+    padding: 1rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .socials__socialmedia--3 {
   padding: 1rem 6rem;
   background-color: #f060d3;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .socials__socialmedia--3 {
+    padding: 1rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .socials__socialmedia--4 {
@@ -272,9 +350,39 @@ body {
   background-color: #5442fc;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .socials__socialmedia--4 {
+    padding: 1rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .socials__socialmedia--5 {
   padding: 1rem 6rem;
   background-color: #fc9942;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .socials__socialmedia--5 {
+    padding: 1rem 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .socials__icon {
@@ -419,8 +527,20 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+
+@media only screen and (max-width: 75em) {
+  .header__box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 62.5em) {
+  .header__box {
+    width: 100%;
+  }
 }
 
 .header__text {
@@ -430,8 +550,14 @@ body {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .header__text {
+    width: 80%;
+  }
+}
+
 .header__arrow {
-  margin-top: 8rem;
+  margin-top: 15rem;
   border: 3px solid #211d1e;
   border-radius: 50%;
   width: 3.5rem;
@@ -466,6 +592,12 @@ body {
   padding: 12rem 0;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .about {
+    padding: 6rem 0;
+  }
+}
+
 .about__text {
   width: 55%;
   font-size: 2rem;
@@ -477,6 +609,12 @@ body {
   width: 55%;
   height: auto;
   position: relative;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .about__img-box {
+    width: 80%;
+  }
 }
 
 .about__img {
@@ -529,6 +667,12 @@ body {
   padding: 12rem 0;
 }
 
+@media only screen and (max-width: 75em) {
+  .who {
+    padding: 8rem 0;
+  }
+}
+
 .who__text {
   font-size: 2rem;
   margin-top: 5rem;
@@ -540,6 +684,18 @@ body {
 .who__box {
   width: 100%;
   padding: 2rem 20rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .who__box {
+    padding: 2rem 6rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .who__box {
+    padding: 2rem 2rem;
+  }
 }
 
 .what {
@@ -573,6 +729,12 @@ body {
   -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   grid-gap: 3rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .what__box {
+    padding: 0 10rem;
+  }
 }
 
 .what__cont {
@@ -696,6 +858,18 @@ body {
   padding: 12rem 20rem;
 }
 
+@media only screen and (max-width: 62.5em) {
+  .contact {
+    padding: 10rem 8rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact {
+    padding: 8rem 2rem;
+  }
+}
+
 .contact__text {
   font-size: 1.5rem;
   width: 60%;
@@ -716,8 +890,23 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact__form {
   width: 80%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__form {
+    width: 100%;
+  }
 }
 
 .footer {

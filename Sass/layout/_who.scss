@@ -5,6 +5,9 @@
     flex-direction: column;
     background-color: $color-gray-light;
     padding: $padding-primary 0;
+    @media only screen and(max-width: $bp-largest){
+        padding: 8rem 0;
+    }
     &__text{
         font-size: $font-size-primary;
         margin-top: $margin-primary;
@@ -15,5 +18,11 @@
     &__box{
         width: 100%;
         padding: 2rem 20rem;
+        @media only screen and(max-width: $bp-largest){
+            padding: 2rem 6rem;;
+        }
+        @media only screen and(max-width: $bp-small){
+            padding: 2rem 2rem;;
+        }
     }
 }
