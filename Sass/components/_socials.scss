@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 3px;
+    
     &__socialmedia{
         &--1{
             background-color: $color-blue;

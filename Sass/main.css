@@ -70,6 +70,20 @@ body {
   text-transform: capitalize;
 }
 
+.heading--white {
+  color: #fff;
+  font-weight: 400;
+}
+
+.heading--white::after {
+  content: "";
+  display: block;
+  margin: 1rem auto 0 auto;
+  height: 3px;
+  background-color: #fff;
+  width: 5rem;
+}
+
 .gallery {
   display: -ms-grid;
   display: grid;
@@ -481,6 +495,54 @@ body {
 .what__description {
   font-size: 1.6rem;
   text-align: center;
+}
+
+.client {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../img/meeting.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/meeting.jpg");
+  padding: 12rem 0;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.client__text {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 3rem 0 5rem 0;
+  width: 60%;
+}
+
+.client__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(20rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 3rem;
+  width: 90%;
+}
+
+.client__img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  padding: 0 5rem;
 }
 
 .contact {

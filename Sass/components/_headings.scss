@@ -51,5 +51,19 @@
     &--capt{
       text-transform: capitalize;
     }
+    &--white{
+      color: $color-white;
+      font-weight: 400;
+      &::after{
+        content: "";
+        display: block;
+        margin: 1rem auto 0 auto;
+        height: 3px;
+        background-color: $color-white;
+        width: 5rem;
+        
+        
+      }
+    }
 
 }
