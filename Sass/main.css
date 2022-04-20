@@ -46,6 +46,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading--1 {
+    font-size: 3rem;
+  }
+}
+
 .heading--2 {
   color: #211d1e;
   text-transform: uppercase;
@@ -500,6 +506,13 @@ body {
   color: #ff2626;
 }
 
+@media only screen and (max-width: 75em) {
+  .slider__dot--active {
+    -webkit-transform: translateY(-6.4rem);
+            transform: translateY(-6.4rem);
+  }
+}
+
 .header {
   height: 100vh;
   background-image: url(../img/workplace.jpg);
@@ -737,6 +750,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 62.5em) {
+  .what__box {
+    padding: 0rem 6rem;
+  }
+}
+
 .what__cont {
   width: 100%;
   display: -webkit-box;
@@ -823,6 +842,13 @@ body {
   width: 60%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .client__text {
+    font-size: 2rem;
+    width: 80%;
+  }
+}
+
 .client__box {
   display: -ms-grid;
   display: grid;
@@ -830,6 +856,13 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   grid-gap: 3rem;
   width: 90%;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .client__box {
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+  }
 }
 
 .client__img {

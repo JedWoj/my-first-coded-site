@@ -72,6 +72,9 @@
             font-size: 16rem;
             transform: translateY(-6.3rem);
             color: $color-primary;
+            @media only screen and(max-width: $bp-largest){
+                transform: translateY(-6.4rem);;
+            }
         }
     }
 

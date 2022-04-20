@@ -14,12 +14,19 @@
         text-align: center;
         margin: 3rem 0 5rem 0;
         width: 60%;
+        @media only screen and(max-width: $bp-small){
+            font-size: 2rem;
+            width: 80%;
+        }
     }
     &__box{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         grid-gap: 3rem;
         width: 90%;
+        @media only screen and(max-width: $bp-small){
+            grid-template-rows: repeat(5, 1fr);
+        }
     }
     &__logo{
         // width: 100%;
