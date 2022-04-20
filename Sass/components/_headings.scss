@@ -48,5 +48,8 @@
     &--red{
       color: $color-primary;
     }
+    &--capt{
+      text-transform: capitalize;
+    }
 
 }
