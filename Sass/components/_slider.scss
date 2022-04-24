@@ -67,7 +67,7 @@
         line-height: 0.5;
         transform: translateY(-4rem);
         cursor: pointer;
-
+        color: $color-gray-dark;
         &--active{
             font-size: 16rem;
             transform: translateY(-6.3rem);

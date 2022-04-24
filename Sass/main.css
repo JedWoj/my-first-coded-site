@@ -56,8 +56,8 @@ body {
   color: #3c3c3c;
   text-transform: uppercase;
   letter-spacing: 6px;
-  font-size: 3.5rem;
-  font-weight: 600;
+  font-size: 3.4rem;
+  font-weight: 700;
 }
 
 .heading--2::after {
@@ -520,6 +520,7 @@ body {
   -webkit-transform: translateY(-4rem);
           transform: translateY(-4rem);
   cursor: pointer;
+  color: #c9c7c7;
 }
 
 .slider__dot--active {
@@ -821,6 +822,7 @@ body {
 .what__description {
   font-size: 1.6rem;
   text-align: center;
+  line-height: 2;
 }
 
 .work {
