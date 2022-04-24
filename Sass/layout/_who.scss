@@ -1,33 +1,39 @@
-.who{
+.who {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: $color-gray-light;
     padding: $padding-primary 0;
+
     @media only screen and(max-width: $bp-largest){
         padding: 8rem 0;
     }
-    &__text{
+
+    &__text {
         font-size: $font-size-primary;
         margin-top: $margin-primary;
         width: 60%;
         text-align: center;
         margin-bottom: $margin-primary;
     }
-    &__box{
+
+    &__box {
         width: 100%;
         padding: 2rem 30rem;
+
         @media only screen and(max-width: 1720px){
             padding: 2rem 20rem;
         }
+
         @media only screen and(max-width: $bp-largest){
             padding: 2rem 6rem;
         }
+
         @media only screen and(max-width: $bp-large){
             padding: 2rem 12rem;
-            
         }
+        
         @media only screen and(max-width: $bp-small){
             padding: 2rem 6rem;
         }

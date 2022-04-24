@@ -1,46 +1,51 @@
-.what{
+.what {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: $padding-primary 0;
    
-    &__text{
+    &__text {
         font-size: $font-size-primary;
         width: 60%;
         text-align: center;
         margin-top: $margin-primary;
     }
-    &__box{
+
+    &__box {
         padding: 0 20rem;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
         grid-gap: 3rem;
+
         @media only screen and(max-width: $bp-large){
             padding: 0 10rem;;
         }
+
         @media only screen and(max-width: $bp-large){
             padding: 0rem 6rem;;
         }
     }
     
-    &__cont{
+    &__cont {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    &__icon{
+
+    &__icon {
         font-size: 9rem;
         padding: 3rem;
         margin: 2rem 0;
 
-        &--red{
+        &--red {
             color: $color-primary;
         }
     }
-    &__description{
+    
+    &__description {
         font-size: 1.6rem;
         text-align: center;
         line-height: 2;

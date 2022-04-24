@@ -1,4 +1,4 @@
-.work{
+.work {
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -6,10 +6,9 @@
     align-items: center;
     flex-direction: column;
 
-    &__text{
+    &__text {
         font-size: $font-size-primary;
         width: 60%;
         margin: 5rem 0;
-        
     }
 }

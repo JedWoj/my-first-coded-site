@@ -1,82 +1,80 @@
 
-.heading{
+.heading {
+  color: $color-text-primary;
+  text-transform: uppercase;
     
-    &--1{
-      color:  $color-text-primary;
-      text-transform: uppercase;
+  &--1 {
       letter-spacing: 8px;
       font-size: 7rem;
       line-height: 1.4;
       font-weight: 600;
+
       @media only screen and(max-width: $bp-large){
         font-size: 5rem;
-    }
-    @media only screen and(max-width: $bp-medium){
-      font-size: 4rem;
-  }
-  @media only screen and(max-width: $bp-small){
-    font-size: 3rem;
-}
+      }
+
+      @media only screen and(max-width: $bp-medium){
+        font-size: 4rem;
+      }
+
+      @media only screen and(max-width: $bp-small){
+         font-size: 3rem;
+      }
       
     }
-    &--2{
-        color: $color-text-primary;
-        text-transform: uppercase;
+
+    &--2 {
         letter-spacing: 6px;
         font-size: 3.4rem;
-        font-weight: 700;
-        
-        
-        
+        font-weight: 700;    
 
-        &::after{
+        &::after {
           content: "";
           display: block;
           margin: 1rem auto 0 auto;
           height: 3px;
           background-color: $color-gray;
           width: 5rem;
-          
-          
         }
     }
-    &--3{
-      color: $color-text-primary;
+
+    &--3 { 
       font-size: 4rem;
       letter-spacing: 3px;
-      line-height: 1.6;
-      text-transform: uppercase;
+      line-height: 1.6;    
       font-weight: 400;
+
       @media only screen and(max-width: $bp-large){
         font-size: 3rem;
+      }
     }
-    }
-    &--4{
-      text-transform: uppercase;
+
+    &--4 {
       font-size: 1.8rem;
       letter-spacing: 1px;
       font-weight: 600;
       margin-bottom: 2rem;
     }
-    &--red{
+
+    &--red {
       color: $color-primary;
     }
-    &--capt{
+
+    &--capt {
       text-transform: capitalize;
     }
-    &--white{
+
+    &--white {
       color: $color-white;
       font-weight: 400;
-      &::after{
+
+      &::after {
         content: "";
         display: block;
         margin: 1rem auto 0 auto;
         height: 3px;
         background-color: $color-white;
         width: 5rem;
-        
-        
       }
     }
-
 }

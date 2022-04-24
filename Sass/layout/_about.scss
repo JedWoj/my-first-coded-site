@@ -1,34 +1,37 @@
-.about{
+.about {
     background-color: $color-white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: $padding-primary 0;
+
     @media only screen and(max-width: $bp-large){
         padding: 6rem 0;
     }
-    &__text{
+
+    &__text {
         width: 55%;
         font-size: $font-size-primary;
         padding: 3rem 0;
         text-align: center;
     }
-    &__img-box{
+
+    &__img-box {
        width: 55%;
        height: auto;
        position: relative;
        @media only screen and(max-width: $bp-large){
-        width: 80%;
-    }
+           width: 80%;
+        }
     
     }
-    &__img{
+    &__img {
         width: 100%;
         height: auto;
-        
     }
-    &__shadow{
+
+    &__shadow {
         background-color: rgba($color-black, .4);
         position: absolute;
         top: 0;
@@ -38,16 +41,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
-    &__play{
+
+    &__play {
         width: 4rem;
         height: 4rem;
         background-color: $color-white;
         clip-path: polygon(0 100%, 100% 50%, 0 0);
         cursor: pointer;
-
-
-        
     }
 }

@@ -1,69 +1,46 @@
-.socials{
+.socials {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 3px;
+
     @media only screen and(max-width: $bp-small){
         margin-top: 4rem;
         grid-template-columns: repeat(5, 1fr);
         width: 100%;
     }
-    &__socialmedia{
-        &--1{
-            background-color: $color-blue;
-            padding: 1rem 6rem;
-            @media only screen and(max-width: $bp-small){
-                padding: 1rem 3rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        &--2{
-            padding: 1rem 6rem;
-            background-color: $color-blue-light;
-            @media only screen and(max-width: $bp-small){
-                padding: 1rem 3rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        &--3{
-            padding: 1rem 6rem;
-           background-color:$color-pink;
-           @media only screen and(max-width: $bp-small){
+
+    &__socialmedia {
+        padding: 1rem 6rem;
+
+        @media only screen and(max-width: $bp-small){
             padding: 1rem 3rem;
             display: flex;
             justify-content: center;
-                align-items: center;
+            align-items: center;
         }
+        
+        &--1 {
+            background-color: $color-blue;
         }
-        &--4{
-            padding: 1rem 6rem;
+
+        &--2 {
+            background-color: $color-blue-light;
+        }
+
+        &--3 {
+            background-color:$color-pink;
+        }
+
+        &--4 {
             background-color: $color-blue-dark;
-            @media only screen and(max-width: $bp-small){
-                padding: 1rem 3rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
         }
-        &--5{
-            padding: 1rem 6rem;
+
+        &--5 {
             background-color: $color-orange;
-            @media only screen and(max-width: $bp-small){
-                padding: 1rem 3rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
         }
     }
-    &__icon{
+    &__icon {
         color: $color-white;
         font-size: 2rem;
-        @media only screen and(max-width: $bp-small){
-            
-        }
     }
 }

@@ -1,45 +1,46 @@
-.gallery{
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    // grid-template-rows: 30vh;
     grid-column-gap: 4rem;
-    // grid-row-gap: 3.5rem;
+
     @media only screen and(max-width: 1720px){
         grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
         grid-column-gap: 3rem;
     }
+
     @media only screen and(max-width: $bp-large){
         grid-template-columns: repeat(2, minmax(15rem, 1fr));
         
     }
+
     @media only screen and(max-width: 450px){
         grid-template-columns: repeat(1, minmax(15rem, 1fr));
     }
-    
-    
-    &__img{
+
+    &__img {
         object-fit: cover;
         width: 100%;
         height: 100%;
         display: block;
-        position: relative;
-        
-        
-        
+        position: relative; 
     }
-    &__name{
+
+    &__name {
         margin-top: 2rem;
         font-size: 1.4rem;
         font-weight: 600;
-    }
-    &__position{
+    } 
+
+    &__position {
         font-size: 1.2rem;
         margin-bottom: 2rem;
     }
-    &__overlay-box{
+
+    &__overlay-box {
         position: relative;
     }
-    &__overlay{
+
+    &__overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -47,28 +48,30 @@
         right: 0;
         background-color: rgba($color-primary, 0);
         transition: all .3s;
-        &:hover{
+        &:hover {
             background-color: rgba($color-primary, 1);
 
-            & .gallery__icon{
+            & .gallery__icon {
                 color: rgba($color-white, 1);
                 background-color: rgba($color-white, .7);
             }
         }
     }
-    &__icon-box{
+
+    &__icon-box {
         position: relative;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        display: inline-block;
         display: flex;
         justify-content: center;
+        
         :not(:last-child){
             margin-right: 1rem;
         }
     }
-    &__icon{
+
+    &__icon {
         font-size: 2.2rem;
         color: rgba($color-white, 0);
         background-color: rgba($color-white, 0);
@@ -79,7 +82,6 @@
         align-items: center;
         transition: all .3s;
         cursor: pointer;
-        
     }
 }
 

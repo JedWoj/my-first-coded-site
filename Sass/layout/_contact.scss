@@ -1,36 +1,42 @@
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: $padding-primary 20rem;
+    
     @media only screen and(max-width: $bp-large){
         padding: 10rem 8rem;;
     }
+
     @media only screen and(max-width: $bp-small){
         padding: 8rem 2rem;;
     }
     
     
-    &__text{
+    &__text {
         font-size: 1.5rem;
         width: 60%;
         text-align: center;
         margin: 4rem 0;
     }
-    &__content{
+
+    &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
         @media only screen and(max-width: $bp-small){
             flex-direction: column;
         }
     }
-   &__form{
+
+   &__form {
        width: 80%;
+
        @media only screen and(max-width: $bp-small){
-        width: 100%;
+           width: 100%;
+        }
     }
-   }
 }
