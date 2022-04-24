@@ -17,12 +17,19 @@
     }
     &__box{
         width: 100%;
-        padding: 2rem 20rem;
+        padding: 2rem 30rem;
+        @media only screen and(max-width: 1720px){
+            padding: 2rem 20rem;
+        }
         @media only screen and(max-width: $bp-largest){
-            padding: 2rem 6rem;;
+            padding: 2rem 6rem;
+        }
+        @media only screen and(max-width: $bp-large){
+            padding: 2rem 12rem;
+            
         }
         @media only screen and(max-width: $bp-small){
-            padding: 2rem 2rem;;
+            padding: 2rem 6rem;
         }
     }
 }
